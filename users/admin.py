@@ -4,6 +4,7 @@ from .models import User
 
 
 class UserAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('id', 'username')
+
 
 admin.site.register(User, UserAdmin)
